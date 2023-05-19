@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Pink</title>
+    <link href="css/style.min.css" rel="stylesheet">
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <nav class="page-header__nav page-header__nav--closed page-header__nav--nojs main-nav">
+        <div class="page-header__bar">
+          <a class= "page-header__logo" href="index.html">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/logo/header-logo-desktop.svg">
+              <source media="(min-width: 660px)" srcset="img/logo/header-logo-tablet.svg">
+              <img src="img/logo/header-logo.svg"  width="74" height="23" alt="логотип">
+            </picture>
+          </a>
+          <button class="main-nav__toggle" type="button">
+            <span class="visually__hidden">Открыть меню</span>
+          </button>
+        </div>
+
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a class="site-list__link" href="index.html">главная</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="catalog.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="form.html">конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a class="site-list__link" href="http://htmlacademy.ru">html academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page__main main">
+      <h1 class="visually__hidden">Социальная сеть "Пинк".</h1>
+      <header class="main__header promo">
+        <h2 class="visually__hidden">Установка приложения</h2>
+        <p class="promo__tagline">Взгляните на жизнь
+          иначе!</p>
+        <picture>
+          <source type="image/webp" media="(min-width: 660px)" srcset="img/promo/promo-phone-big.webp 1x, img/promo/promo-phone-big@2x.webp 2x">
+          <source type="image/webp" srcset="img/promo/promo-phone.webp 1x, img/promo/promo-phone@2x.webp 2x">
+          <source media="(min-width: 660px)" srcset="img/promo/promo-phone-big.png 1x, img/promo/promo-phone-big@2x.png 2x">
+          <img class="promo__img" width="320" height="286" src="img/promo/promo-phone.png" srcset="img/promo/promo-phone@2x.png 2x" alt="изображение съёмки на телефон">
+        </picture>
+        <a class="promo__download-button" href="#">Скачать приложение</a>
+        <div class="promo__download-wrapper download">
+          <a class="download__link" href="#">
+            <img src="img/promo/apple-logo.svg" alt="логотип эпл">
+          </a>
+          <a class="download__link" href="#">
+            <img src="img/promo/android-logo.svg" alt="логотип андроид">
+          </a>
+          <a class="download__link" href="#">
+            <img src="img/promo/microsoft-logo.svg" alt="логотип майкрософт">
+          </a>
+        </div>
+        <p class="promo__text">Доступно для iPhone, iPad, Android, Windows Phone, OS X, Windows 8</p>
+      </header>
+
+      <section class="main__section presentation">
+        <h2 class="visually__hidden">Презентация приложения "Пинк".</h2>
+        <p class="presentation__text">
+          <span>Устали от серости мегаполиса?</span>
+          <span>Нам есть, что вам предложить!</span>
+        </p>
+        <ul class="presentation__list advantage-list">
+          <li class="advantage-list__item">
+            <h3 class="advantage-list__title">Поднимает настроение</h3>
+            <p class="advantage-list__text">Приложение позволит вам победить осеннюю хандру и депрессию буквально в несколько кликов!</p>
+            <picture>
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/main/presentation-image3-tablet.webp 1x, img/main/presentation-image3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/main/presentation-image3.webp 1x, img/main/presentation-image3@2x.webp 2x">
+              <source media="(min-width: 660px)" srcset="img/main/presentation-image3-tablet.png 1x, img/main/presentation-image3-tablet@2x.png 2x">
+              <img class="advantage-list__image" src="img/main/presentation-image3.png" srcset="img/main/presentation-image3@2x.png" width="157" height="284" alt="фото мусорки с малиновым фильтром и смайликом" >
+            </picture>
+          </li>
+          <li class="advantage-list__item">
+            <h3 class="advantage-list__title">Меняет мир вокруг</h3>
+            <p class="advantage-list__text">Сделайте снимок и украсьте его смайликом или текстовой подписью, чтобы усилить эффект </p>
+            <picture>
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/main/presentation-image3-tablet.webp 1x, img/main/presentation-image3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/main/presentation-image3.webp 1x, img/main/presentation-image3@2x.webp 2x">
+              <source media="(min-width: 660px)" srcset="img/main/presentation-image3-tablet.png 1x, img/main/presentation-image3-tablet@2x.png 2x">
+              <img class="advantage-list__image" src="img/main/presentation-image3.png" srcset="img/main/presentation-image3@2x.png" width="157" height="284" alt="фото мусорки с малиновым фильтром и смайликом" >
+            </picture>
+          </li>
+          <li class="advantage-list__item">
+            <h3 class="advantage-list__title">Заводит новых друзей</h3>
+            <p class="advantage-list__text">Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и заводите новых</p>
+            <picture>
+              <source type="image/webp" media="(min-width: 660px)" srcset="img/main/presentation-image3-tablet.webp 1x, img/main/presentation-image3-tablet@2x.webp 2x">
+              <source type="image/webp" srcset="img/main/presentation-image3.webp 1x, img/main/presentation-image3@2x.webp 2x">
+              <source media="(min-width: 660px)" srcset="img/main/presentation-image3-tablet.png 1x, img/main/presentation-image3-tablet@2x.png 2x">
+              <img class="advantage-list__image advantage-list__image" src="img/main/presentation-image3.png" srcset="img/main/presentation-image3@2x.png" width="157" height="284" alt="фото мусорки с малиновым фильтром и смайликом" >
+            </picture>
+          </li>
+        </ul>
+      </section>
+
+      <section class="main__section reviews">
+        <h2 class="visually__hidden">Отзывы</h2>
+        <div class="reviews__wrapper slider">
+          <div class="reviews__list slider__list">
+            <blockquote class="reviews__item slider__item">
+              <div class="reviews__author-info">
+                <cite class="reviews__author-name">Николай Петров</cite>
+                <p class="reviews__author-about">25 лет, водитель трамвая</p>
+                <p class="reviews__author-text">«Это приложение перевернуло мой мир и позволило по-новому взглянуть на привычные серые вещи! А еще я познакомился со своей будущей женой в комментариях к выложенной фотографии!»</p>
+              </div>
+            </blockquote>
+          </div>
+          <p class="reviews__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+
+      <section class="main__section price">
+        <h2 class="visually__hidden">Цены на тарифы</h2>
+        <div class="price__wrapper slider">
+          <div class="price__list slider__list">
+            <img class="price__img" src="" alt="Цены на тарифы">
+          </div>
+          <p class="price__toggles slider__toggles">
+            <button class="slider__toggle slider__toggle--current" type="button">1</button>
+            <button class="slider__toggle" type="button">2</button>
+            <button class="slider__toggle" type="button">3</button>
+          </p>
+        </div>
+      </section>
+
+      <section class="main__section contacts">
+        <h2 class="visually__hidden">Контакты</h2>
+        <p class="contacts__text">Остались вопросы?
+          Свяжитесь с нами!</p>
+          <dl class="contacts__list">
+            <dt class="contacts__list-header">Звоните:</dt>
+            <dd class="contacts__list-description">+7 (812) 555-66-66</dd>
+            <dt class="contacts__list-header">Пишите:</dt>
+            <dd class="contacts__list-description">mail@htmlacademy.ru</dd>
+            <dt class="contacts__list-header">Приезжайте в гости:</dt>
+            <dd class="contacts__list-description">ул. Большая
+              Конюшенная, 19/8</dd>
+          </dl>
+      </section>
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="#">
+        <img class="logo" src="img/logo/footer-logo-img.svg" alt="логотип">
+        <img class="logo" src="img/logo/footer-logo-text.svg" alt="логотип">
+      </a>
+      <ul class="page-footer__media media-list">
+        <li class="media-list__item">
+          <a class="media-list__link" href="#">
+            <span class="visually__hidden">Twitter</span>
+          </a>
+        </li>
+        <li class="media-list__item">
+          <a class="media-list__link" href="#">
+            <span class="visually__hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="media-list__item">
+          <a class="media-list__link" href="#">
+            <span class="visually__hidden">Ellipse</span>
+          </a>
+        </li>
+      </ul>
+      <p class="page-footer__text developer">Разработано
+        <a class="developer__link" href="#">
+          <img src="img/logo/html-academy.svg" alt="Логотип HTML-Академии">
+        </a>
+      </p>
+    </footer>
+
+    <script src="js/main.js"></script>
+  </body>
+</html>

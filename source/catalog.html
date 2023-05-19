@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Pink</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+      <a class= "page-header__logo" href="index.html">
+        <img src="img/logo/header-logo.svg" alt="логотип">
+      </a>
+
+      <nav class="page-header__nav main-nav">
+        <button class="main-nav__toggle" type="button">
+          <span class="visually__hidden">Открыть меню</span>
+        </button>
+        <ul class="main-nav__list site-list">
+          <li class="site-list__item">
+            <a href="index.html">главная</a>
+          </li>
+          <li class="site-list__item">
+            <a href="catalog.html">Фотографии</a>
+          </li>
+          <li class="site-list__item">
+            <a href="form.html">конкурс</a>
+          </li>
+          <li class="site-list__item">
+            <a href="http://htmlacademy.ru">html academy</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <main class="page__main main">
+        <h1 class="visually__hidden">Фотогаллерея</h1>
+        <header class="main__header promo">
+          <h2 class="promo__heading">Фотографии
+            пользователей</h2>
+        </header>
+
+        <section class="main__section gallery">
+            <p class="gallery__text">Взгляните на фотографии, которые выкладывают пользователи!
+                Видите, как не хватает ваших?</p>
+            <ul class="gallery__list">
+                <li class="gallery__item user">
+                    <img class="user__img" src="img/catalog/1.jpg" alt="Фото моста в горах">
+                    <div class="user__info">
+                        <h3 class="user__info-name">Анна <span class="user__info-posttime">(5 минут назад)</span></h3>
+                        <p class="user__info-comment">Прыгать или нет? Напишите в
+                        комментарии свой совет и
+                        смотрите прямую трансляцию в
+                        перископе, задавайте свои вопросы!</p>
+                        <p class="user__info-likes">Нравится: <span>215</span></p>
+                    </div>
+                </li>
+                <li class="gallery__item user">
+                    <img class="user__img" src="img/catalog/2.jpg" alt="Фото авто">
+                    <div class="user__info">
+                        <h3 class="user__info-name">Левон <span class="user__info-posttime">(5 часов назад)</span></h3>
+                        <p class="user__info-comment">Вчера он на луну летал, сегодня в руки к нам попал.</p>
+                        <p class="user__info-likes">Нравится: <span>356</span></p>
+                    </div>
+                </li>
+                <li class="gallery__item user">
+                    <img class="user__img" src="img/catalog/3.jpg" alt="Фото барабанной установки">
+                    <div class="user__info">
+                        <h3 class="user__info-name">Антон <span class="user__info-posttime">(12 часов назад)</span></h3>
+                        <p class="user__info-comment">Соседи будут рады!</p>
+                        <p class="user__info-likes">Нравится: <span>666</span></p>
+                    </div>
+                </li>
+                <li class="gallery__item user">
+                    <img class="user__img" src="img/catalog/4.jpg" alt="Фото стеклянного потолка">
+                    <div class="user__info">
+                        <h3 class="user__info-name">Борис <span class="user__info-posttime">(20 часов назад)</span></h3>
+                        <p class="user__info-comment">Здесь могла быть ваша цитата о высоком и вечном.</p>
+                        <p class="user__info-likes">Нравится: <span>215</span></p>
+                    </div>
+                </li>
+                <li class="gallery__item user">
+                    <img class="user__img" src="img/catalog/5.jpg" alt="Фото кубанской бахчи">
+                    <div class="user__info">
+                        <h3 class="user__info-name">Сергей <span class="user__info-posttime">(25 часов назад)</span></h3>
+                        <p class="user__info-comment">Самая кубанская в мире!</p>
+                        <p class="user__info-likes">Нравится: <span>4</span></p>
+                    </div>
+                </li>
+                <li class="gallery__item user">
+                    <img class="user__img" src="img/catalog/6.jpg" alt="Фото ног в горах">
+                    <div class="user__info">
+                        <h3 class="user__info-name">Максим <span class="user__info-posttime">(40 часов назад)</span></h3>
+                        <p class="user__info-comment">Где снег-то?</p>
+                        <p class="user__info-likes">Нравится: <span>215</span></p>
+                    </div>
+                </li>
+                <li class="gallery__item user">
+                    <img class="user__img" src="img/catalog/7.jpg" alt="Фото крыла самолёта в полёте">
+                    <div class="user__info">
+                        <h3 class="user__info-name">Надежда <span class="user__info-posttime">(45 часов назад)</span></h3>
+                        <p class="user__info-comment">Всем GM и взаимные лайки!</p>
+                        <p class="user__info-likes">Нравится: <span>2560</span></p>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <section class="main__section post">
+            <h2 class="visually__hidden">Выложить фотографию</h2>
+            <p class="post__text">Затмите их всех!
+                Выкладывайте все, что накопилось в телефоне!</p>
+            <div class="post__wrapper">
+                <img src="img/catalog/post.jpg" alt="фото зимней дороги на рассвете">
+                <ul class="post__list edit-list">
+                    <li class="edit-list__item">
+                        <label for="crop-range"><span class="visually__hidden">обрезать изображение</span></label>
+                    </li>
+                    <li class="edit-list__item">
+                        <label for="fill-range"><span class="visually__hidden">наложить фильтр</span></label>
+                    </li>
+                    <li class="edit-list__item">
+                        <label for="contrast-range"><span class="visually__hidden">настроить контрастность</span></label>
+                    </li>
+                </ul>
+                <div class="post__switchers switcher">
+                    <div class="switcher__toggler">
+                        <input class="switcher__range" type="range" name="crop-range" id="crop-range" min="0" value="8" max="10" step="1">
+                        <input class="switcher__range" type="range" name="fill-range" id="fill-range" min="0" value="4" max="10" step="1">
+                        <input class="switcher__range" type="range" name="contrast-range" id="contrast-range" min="-10" value="1" max="10" step="1">
+                    </div>
+                </div>
+                <div class="post__buttons button-list">
+                    <button class="button" type="submit">Запостить</button>
+                    <button class="button" type="reset" disabled>Отмена</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+      <a class="page-footer__logo" href="#">
+          <img class="logo" src="img/logo/footer-logo-img.svg" alt="логотип">
+          <img class="logo" src="img/logo/footer-logo-text.svg" alt="логотип">
+      </a>
+      <ul class="page-footer__media media-list">
+          <li class="media-list__item">
+          <a class="media-list__link" href="#">
+              <span class="visually__hidden">Twitter</span>
+          </a>
+          </li>
+          <li class="media-list__item">
+          <a class="media-list__link" href="#">
+              <span class="visually__hidden">Facebook</span>
+          </a>
+          </li>
+          <li class="media-list__item">
+          <a class="media-list__link" href="#">
+              <span class="visually__hidden">Ellipse</span>
+          </a>
+          </li>
+      </ul>
+      <p class="page-footer__text developer">Разработано
+          <a class="developer__link" href="#">
+          <img src="img/logo/html-academy.svg" alt="Логотип HTML-Академии">
+          </a>
+      </p>
+    </footer>
+  </body>
+</html>

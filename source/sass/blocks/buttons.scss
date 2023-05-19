@@ -1,0 +1,84 @@
+//header
+
+.main-nav__toggle {
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+
+  @media (min-width: $desktop-width) {
+    display: none;
+  }
+}
+
+.page-header__nav--closed .main-nav__toggle::before {
+  position: absolute;
+  content: "";
+  top: 33px;
+  right: 20px;
+  width: 50px;
+  height: 3px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 0 0 #ffffff, 0 -8px 0 0 #ffffff ;
+  border-radius: 1px;
+
+  @media (min-width: $tablet-width) {
+    top: 55px;
+  }
+}
+
+.page-header__nav--opened .main-nav__toggle {
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 33px;
+    right: 20px;
+    width: 32px;
+    height: 3px;
+    background-color: #ffffff;
+
+    @media (min-width: $tablet-width) {
+      top: 55px;
+    }
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.page-header__nav--nojs .main-nav__toggle {
+  display: none;
+}
+
+//promo
+
+.promo__download-button {
+  display: block;
+  width: 280px;
+  padding: 18px;
+  margin: 0 auto;
+  margin-bottom: 32px;
+
+  font-family: $font-family;
+  font-weight: $font-bold;
+  font-size: 18px;
+  line-height: 18px;
+  text-decoration: none;
+
+  background-color: transparent;
+  color: #ffffff;
+  border: 3px solid white;
+  border-radius: 29px;
+
+  @media (min-width: $tablet-width) {
+    margin: 0 0 51px 0;
+    width: 300px;
+  }
+}

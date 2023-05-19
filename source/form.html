@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html class="page" lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Pink</title>
+  </head>
+  <body class="page__body">
+    <header class="page-header">
+        <a class= "page-header__logo" href="index.html">
+          <img src="img/logo/header-logo.svg" alt="логотип">
+        </a>
+        <nav class="page-header__nav main-nav">
+          <button class="main-nav__toggle" type="button">
+            <span class="visually__hidden">Открыть меню</span>
+          </button>
+          <ul class="main-nav__list site-list">
+            <li class="site-list__item">
+              <a href="index.html">главная</a>
+            </li>
+            <li class="site-list__item">
+              <a href="catalog.html">Фотографии</a>
+            </li>
+            <li class="site-list__item">
+              <a href="form.html">конкурс</a>
+            </li>
+            <li class="site-list__item">
+              <a href="http://htmlacademy.ru">html academy</a>
+            </li>
+          </ul>
+        </nav>
+    </header>
+
+    <main class="page__main main">
+        <section class="main__section">
+            <h1 class="visually__hidden">Форма для участия в конкурсе</h1>
+        <header class="main__header promo">
+          <h2 class="promo__heading">Конкурс на самое
+            безбашенное
+            путешествие с Пинк</h2>
+            <p class="promo__text">Поделитесь своей историей и получите
+                шанс выиграть ценный приз — 1000
+                миль на вашу бонусную карту!</p>
+        </header>
+        </section>
+
+        <section class="main__section contest">
+            <form class="contest__form form" action="https://echo.htmlacademy.ru/courses" method="get">
+                <fieldset class="form__field-group field-group">
+                    <legend class="visually__hidden">Персональные данные</legend>
+                    <ul class="field-group__list">
+                        <li class="field-group__item">
+                            <label class="field-group__label">ФАМИЛИЯ:
+                                <input class="field-group__input" type="text" placeholder="Укажите фамилию *" required>
+                            </label>
+                        </li>
+                        <li class="field-group__item">
+                            <label class="field-group__label">ИМЯ:
+                                <input class="field-group__input" type="text" placeholder="Введите ваше имя *" required>
+                            </label>
+                        </li>
+                        <li class="field-group__item">
+                            <label class="field-group__label">ОТЧЕСТВО:
+                                <input class="field-group__input" type="text" placeholder="Ну и отчество тоже">
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="form__field-group field-group">
+                    <legend class="field-group__title">Ваши безбашенные
+                        достижения в путешествии</legend>
+                    <ul class="field-group__list">
+                        <li class="field-group__item">
+                            <label class="field-group__label control">
+                                <input class="field-group__input control-input" type="checkbox" name="achievement" value="shark-selfie" checked="">
+                                <span class="control-lead">Сделал селфи с акулой</span>
+                            </label>
+                        </li>
+                        <li class="field-group__item">
+                            <label class="field-group__label control">
+                                <input class="field-group__input control-input" type="checkbox" name="achievement" value="sunburn" checked="">
+                                <span class="control-lead">Обгорел на пляже</span>
+                            </label>
+                        </li>
+                        <li class="field-group__item">
+                            <label class="field-group__label control">
+                                <input class="field-group__input control-input" type="checkbox" name="achievement" value="meet-Chack-Norris">
+                                <span class="control-lead">Видел Чака Норриса</span>
+                            </label>
+                        </li>
+                        <li class="field-group__item">
+                            <label class="field-group__label control">
+                                <input class="field-group__input control-input" type="checkbox" name="achievement" value="bought-souvenir">
+                                <span class="control-lead">Накупил сувениров</span>
+                            </label>
+                        </li>
+                        <li class="field-group__item">
+                            <label class="field-group__label control">
+                                <input class="field-group__input control-input" type="checkbox" name="achievement" value="held-tower" checked="">
+                                <span class="control-lead">Удержал башню</span>
+                            </label>
+                        </li>
+                        <li class="field-group__item">
+                            <label class="field-group__label control">
+                                <input class="field-group__input control-input" type="checkbox" name="achievement" value="smashed-hotel">
+                                <span class="control-lead">Разгромил отель</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="form__field-group field-group">
+                    <legend class="visually__hidden">Контакты</legend>
+                    <ul class="field-group__list">
+                        <li class="field-group__item">
+                            <label class="field-group__label">НОМЕР ТЕЛЕФОНА
+                                <input class="field-group__input" type="tel" placeholder="Номер, пожалуйста">
+                            </label>
+                        </li>
+                        <li class="field-group__item">
+                            <label class="field-group__label">АДРЕС ПОЧТЫ
+                                <input class="field-group__input" type="email" placeholder="Введите почту *" required>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <fieldset class="form__field-group field-group">
+                    <legend class="field-group__title">С каким приложением
+                        путешествовали?</legend>
+                    <ul class="field-group__list">
+                        <li class="field-group__item">
+                            <label class="field-group__label control">
+                                <input class="field-group__input control-input" type="checkbox" name="achievement" value="shark-selfie" checked="">
+                                <span class="control-lead">Pink для iOS</span>
+                            </label>
+                        </li>
+                        <li class="field-group__item">
+                            <label class="field-group__label control">
+                                <input class="field-group__input control-input" type="checkbox" name="achievement" value="sunburn" checked="">
+                                <span class="control-lead">Pink на Android</span>
+                            </label>
+                        </li>
+                        <li class="field-group__item">
+                            <label class="field-group__label control">
+                                <input class="field-group__input control-input" type="checkbox" name="achievement" value="meet-Chack-Norris">
+                                <span class="control-lead">Windows Phone</span>
+                            </label>
+                        </li>
+                    </ul>
+                </fieldset>
+
+                <div class="form__field-group field-group">
+                    <label class="field-group__label" for="textarea">
+                        <span class="field-group__title">ОПИШИТЕ СВОИ ЭМОЦИИ</span>
+                    </label>
+                    <div class="field-group__comment">
+                        <textarea name="comment" id="textarea" cols="30" rows="10" placeholder="Можно прям в красках, не стесняясь в выражениях"></textarea>
+                    </div>
+                </div>
+                <button class="form__button" type="submit">Отправить форму</button>
+                <p class="form__text">* — обязательные поля</p>
+            </form>
+        </section>
+    </main>
+
+    <footer class="page-footer">
+        <a class="page-footer__logo" href="#">
+          <img class="logo" src="img/logo/footer-logo-img.svg" alt="логотип">
+          <img class="logo" src="img/logo/footer-logo-text.svg" alt="логотип">
+        </a>
+        <ul class="page-footer__media media-list">
+          <li class="media-list__item">
+            <a class="media-list__link" href="#">
+              <span class="visually__hidden">Twitter</span>
+            </a>
+          </li>
+          <li class="media-list__item">
+            <a class="media-list__link" href="#">
+              <span class="visually__hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="media-list__item">
+            <a class="media-list__link" href="#">
+              <span class="visually__hidden">Ellipse</span>
+            </a>
+          </li>
+        </ul>
+        <p class="page-footer__text developer">Разработано
+          <a class="developer__link" href="#">
+            <img src="img/logo/html-academy.svg" alt="Логотип HTML-Академии">
+          </a>
+        </p>
+      </footer>
+  </body>
+</html>

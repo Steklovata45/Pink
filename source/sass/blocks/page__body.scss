@@ -1,0 +1,20 @@
+.page__body {
+  min-width: 320px;
+  margin: 0 auto;
+
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 24px;
+
+  background-color: #ffffff;
+  color: $dark-blue;
+
+  @media (min-width: $tablet-width) {
+    min-width: $tablet-width;
+
+  }
+
+  @media (min-width: $desktop-width) {
+    min-width: $desktop-width;
+  }
+}

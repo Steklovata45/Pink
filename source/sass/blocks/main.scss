@@ -1,0 +1,18 @@
+.main__header {
+  padding: 22px 0;
+  background-color: $dark-blue;
+
+  @media (min-width: $tablet-width) {
+    padding: 90px 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 90px 113px;
+  }
+}
+
+// .main__section:nth-child(4) {
+//  // margin-top: -100px;
+//   background-color: #ffffff;
+//   z-index: 2;
+// }
